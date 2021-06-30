@@ -1,0 +1,111 @@
+git: es un programa de control versiones creado
+por linux 
+
+donde usar control de versiones
+-escritor
+
+
+############INSTALAR GIT EN GNU/LINUX###########
+
+sudo apt-get update
+sudo apt-get upgrade
+
+apt-get install git
+
+###########instalacion#################
+
+configurar tu nombre
+
+git config --global user.name "Hector"
+
+git config --global user.email "nuestro@email.com"
+
+#############Estados##################
+
+1) Directorio de trabajo / Working Area: Es la carpeta donde están alojados los archivos del proyecto.
+
+2) Area de preparacion / Staging Area: Es una zona intermedia. Es un archivo que almacena información acerca de lo que va a ir en tu próxima confirmación.
+
+3) Git Area / .git directory: Es la zona final, en ella se alberga el ultimo COMMIT hecho (osea el status actual del proyecto).
+
+##############inicio###################
+
+para crear un repositorio local
+
+git init
+
+ver estatus del repositorio
+
+git status
+
+agregar un archivo al index Area
+
+git add nombre_archivo.txt
+
+agregar todos los archivos al index Area
+
+git add .
+
+git add -A
+
+quitar un archivo del index
+
+git rm --cached nombre_archivo.txt
+
+#################commit############
+
+para ir guardadno cambios en la linea de tiempo realizamos los commis
+
+git commit -m "nuestro comentario"
+
+para  consultar la lista de commits que se han hecho en el repositorio
+
+git log
+
+retornar el tiempo a un commit anterior
+
+git checkout <id_commit>
+
+para regresar al ultimo commit
+
+git checkout master
+
+###############reset#####################
+
+son saltos como los checkout pero que borran todo a su paso
+
+1. Reset soft: git reset --soft <id_commit>
+
+Deja el commit, indicado en el comando, como último sin modificar el proyecto.(desaparece el commit pero deja el trabajo como tal)
+
+2. Reset hard: git reset --hard <id_commit>
+
+Deja el commit, indicado en el comando, como último modificando el proyecto con las características de dicho commit.
+
+###################ramas####################
+
+para conocer las ramas de un proyecto
+
+git branch
+
+para crear una rama nueva
+
+git branch nombre_rama
+
+para cambiar de rama
+
+git checkout nombre_rama
+
+fucionar las ramas
+
+ir a la rama master
+
+git checkout master
+
+git merge otra_rama
+
+borrar ramas 
+
+git branch nombre_rama -d
+
+>>>>>>>>>>>>>>>>>Github>>>>>>>>>>>>>>>>>>>>>>>>>>
