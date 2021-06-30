@@ -109,3 +109,18 @@ borrar ramas
 git branch nombre_rama -d
 
 >>>>>>>>>>>>>>>>>Github>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+conectar respositorio local con Github
+
+git remote add origin link_github
+
+para ver nuestro repositorio remoto
+
+git remote -v
+
+para enviarlo
+
+git push -u origin master
+
+fork: es una peticion para el repositorio de otra persona
+
